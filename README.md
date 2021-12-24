@@ -1,4 +1,3 @@
-﻿# MERN-TINDER-backend
 # Tinder-backend
 
 In this project I built an API for my tinder-clone app using node, express and mongodb. 
