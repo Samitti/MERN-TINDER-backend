@@ -1,5 +1,6 @@
 import express from 'express';
 import mongoose from 'mongoose';
+import Cors from 'cors';
 
 import Cards from './dbCards.js';
 
@@ -9,6 +10,8 @@ const port = process.env.PORT || 8001;
 const connection_url = 'mongodb+srv://admin:ExxQO503vaNSh5Id@cluster0.duyfm.mongodb.net/tinderdb?retryWrites=true&w=majority'
 
 // Midlewares
+app.use(express.json());
+app.use(Cors());
 
 // DB config
 mongoose.connect(connection_url);
