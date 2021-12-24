@@ -17,7 +17,7 @@ app.use(Cors());
 mongoose.connect(connection_url);
 
 // API Endpoints 
-app.get('/', (req, res) => res.status(200).send('HELLO SAMI!!'));
+app.get('/', (req, res) => res.status(200).send('got to:  http://localhost:8001/tinder/cards'));
 
 app.post('/tinder/cards', (req, res) => {
     const dbCard = req.body;
